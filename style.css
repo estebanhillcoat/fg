@@ -1,0 +1,63 @@
+main {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+    gap: 10px;
+}
+
+
+div {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+    transition:transform 0.3s ease-in-out;
+    grid-auto-flow: dense;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* estilos */
+
+div:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.uno {
+
+    grid-column:1/span 3 ;
+}
+
+.cuatro {
+    grid-column: 2/span 2;
+    grid-row:2/4 ;
+    background-image:url('4.jpg')
+}
+
+.dos {
+    grid-row: span 2;
+
+}
+
+.tres {
+        background-image:url('3.jpg')
+
+}
+
+.cuatro {
+        background-image:url('4.jpg')
+
+}
+
+.cinco {
+        background-image:url('4.jpg')
+
+}
+
+
+
